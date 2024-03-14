@@ -1,0 +1,31 @@
+.castBox {
+  padding: 16px;
+}
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 16px 8px;
+}
+.item {
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 160px;
+}
+.castImage {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.character {
+  font-weight: 700;
+}
+.characterItem {
+  font-weight: 400;
+}
+.textBox {
+  padding: 8px;
+}

@@ -1,0 +1,23 @@
+.link {
+  font-size: 24px;
+  color: black;
+}
+.list {
+  list-style-type: none;
+}
+.movieBox {
+  padding: 16px;
+  padding-left: 24px;
+}
+.img {
+  border: 1px solid #000;
+  object-fit: cover;
+  width: 96px;
+  height: 144px;
+}
+.item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}

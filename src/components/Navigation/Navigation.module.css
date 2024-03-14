@@ -1,0 +1,16 @@
+.head {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px 0;
+}
+.navigate {
+  display: flex;
+  gap: 12px;
+}
+.link {
+  color: black;
+}
+.active {
+  color: orangered;
+}

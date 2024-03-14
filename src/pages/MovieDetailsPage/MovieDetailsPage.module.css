@@ -1,0 +1,41 @@
+.image {
+  object-fit: cover;
+  width: 300px;
+  height: 450px;
+}
+.link {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: black;
+}
+.linkList {
+  list-style-type: none;
+}
+.detailsBox {
+  display: flex;
+  gap: 16px;
+}
+.title {
+  margin-top: 16px;
+}
+.genresList {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
+.info {
+  padding: 16px;
+}
+.text {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.linkBox {
+  padding: 16px;
+  margin-top: 16px;
+  border-top: 3px dotted #000;
+  border-bottom: 3px dotted #000;
+}
