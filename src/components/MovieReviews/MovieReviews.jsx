@@ -5,7 +5,7 @@ import { getReviews } from "../../api";
 import { ErrorMessage } from "../ErrorMessage/ErrorMessage";
 import { Loader } from "../Loader/Loader";
 
-export const MovieReviews = () => {
+const MovieReviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
   const [error, setError] = useState(false);
@@ -53,3 +53,4 @@ export const MovieReviews = () => {
     </div>
   );
 };
+export default MovieReviews;

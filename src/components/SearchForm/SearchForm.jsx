@@ -9,7 +9,7 @@ export const SearchForm = ({ request }) => {
       onSubmit={(values, actions) => {
         request(values.query);
         if (!values.query) {
-          toast.error("Please enter a search query");
+          toast.error("Please enter something");
           return;
         }
         actions.resetForm();
@@ -18,7 +18,7 @@ export const SearchForm = ({ request }) => {
       <Form>
         <Field className={style.input} type="text" name="query"></Field>
 
-        <button className={style.button} type="submit">
+        <button className={style.btn} type="submit">
           Search
         </button>
       </Form>

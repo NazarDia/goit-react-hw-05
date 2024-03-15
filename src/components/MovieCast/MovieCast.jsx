@@ -5,7 +5,7 @@ import { Loader } from "../Loader/Loader";
 import style from "./MovieCast.module.css";
 import { getCredits, getImagePath } from "../../api";
 
-export const MovieCast = () => {
+const MovieCast = () => {
   const { movieId } = useParams();
   const [casts, setCasts] = useState([]);
   const [error, setError] = useState(false);
@@ -70,3 +70,4 @@ export const MovieCast = () => {
     </div>
   );
 };
+export default MovieCast;

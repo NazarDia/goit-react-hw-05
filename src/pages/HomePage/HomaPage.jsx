@@ -4,7 +4,7 @@ import { getImagePath, trendingMovie } from "../../api";
 import { ErrorMessage } from "../../components/ErrorMessage/ErrorMessage";
 import { MovieList } from "../../components/MovieList/MovieList";
 
-export const HomePage = () => {
+const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(false);
   const [urlPath, setUrlPath] = useState("");
@@ -26,9 +26,10 @@ export const HomePage = () => {
   }, []);
   return (
     <div>
-      <h2>Trending today</h2>
+      <h2>Trending Today</h2>
       <MovieList movies={movies} urlPath={urlPath} />
       {error && <ErrorMessage />}
     </div>
   );
 };
+export default HomePage;

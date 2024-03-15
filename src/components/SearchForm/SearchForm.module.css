@@ -1,5 +1,5 @@
 .input {
-  padding: 0;
+  padding: 15px;
   height: 40px;
   border: none;
   border-radius: 8px;
@@ -8,11 +8,15 @@
   border: 2px solid #000;
   color: #000;
 }
-.button {
-  padding: 8px 16px;
-  height: 40px;
-  width: 96px;
+.btn {
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: lightblue;
+  padding: 10px 10px;
   margin-left: 12px;
-  border-radius: 8px;
-  border: none;
+}
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  scale: 1.05;
 }

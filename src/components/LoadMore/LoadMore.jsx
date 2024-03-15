@@ -2,10 +2,10 @@ import style from "./LoadMore.module.css";
 
 export const LoadMore = ({ onClick }) => {
   return (
-    <>
-      <button type="button" onClick={onClick} className={style.btn}>
+    <div className={style.container}>
+      <button className={style.loadBtn} onClick={onClick} type="button">
         Load More
       </button>
-    </>
+    </div>
   );
 };

@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { getImagePath, getMovieById } from "../../api";
 import { Link, Outlet, useLocation, useParams } from "react-router-dom";
 import { ErrorMessage } from "../../components/ErrorMessage/ErrorMessage";
 import style from "./MovieDetailsPage.module.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { useRef } from "react";
-import { Suspense } from "react";
 import { Loader } from "../../components/Loader/Loader";
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [error, setError] = useState(false);
   const [movies, setMovies] = useState({});
@@ -101,3 +99,4 @@ export const MovieDetailsPage = () => {
     </div>
   );
 };
+export default MovieDetailsPage;
